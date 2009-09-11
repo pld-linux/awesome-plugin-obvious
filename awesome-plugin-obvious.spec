@@ -30,7 +30,7 @@ głośności alsa i tym podobne.
 %setup -q -n obvious-%{rel}
 
 for I in */readme; do
-  mv $I readme-$(basename $I)
+  mv $I readme-$(dirname $I)
 done
 
 %install
