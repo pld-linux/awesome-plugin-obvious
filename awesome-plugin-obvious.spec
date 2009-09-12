@@ -4,6 +4,7 @@
 
 %define		rel 20090910
 Summary:	Set of obvious awesome widgets
+Summary(hu.UTF-8):	Alapvető awesome widget-ek gyűjteménye
 Summary(pl.UTF-8):	Zestaw oczywistych widgetów dla awesome
 Name:		awesome-plugin-obvious
 Version:	0
@@ -16,11 +17,16 @@ Source0:	http://xatka.net/~z/PLD/obvious-%{rel}.tar.bz2
 Requires:	awesome-plugin-awful
 Requires:	awesome-plugin-beautiful
 Requires:	awesome-plugin-naughty
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Obvious is a set of awesome widgets like prompt, alsa volume control
 etc.
+
+%description -l hu.UTF-8
+Obvious awesome widget-ek tömkelege, mint prompt, alsa
+hangerőszabályzás, stb.
 
 %description -l pl.UTF-8
 Obvious jest zestawem widgetów dla awesome takich jak prompt, kontrola
