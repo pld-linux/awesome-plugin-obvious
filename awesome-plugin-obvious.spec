@@ -14,6 +14,7 @@ Group:		X11/Window Managers
 # git clone git://git.mercenariesguild.net/obvious.git
 Source0:	http://xatka.net/~z/PLD/obvious-%{rel}.tar.bz2
 # Source0-md5:	623a976b2fe3f3f2a688d3af0d6e09ef
+URL:		http://awesome.naquadah.org/wiki/Obvious
 Requires:	awesome-plugin-awful
 Requires:	awesome-plugin-beautiful
 Requires:	awesome-plugin-naughty
