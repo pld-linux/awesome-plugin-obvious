@@ -8,15 +8,14 @@ Summary(hu.UTF-8):	Alapvető awesome widget-ek gyűjteménye
 Summary(pl.UTF-8):	Zestaw oczywistych widgetów dla awesome
 Name:		awesome-plugin-obvious
 Version:	0
-Release:	0.%{rel}.1
+Release:	0.%{rel}.2
 License:	MIT
 Group:		X11/Window Managers
 # git clone git://git.mercenariesguild.net/obvious.git
 Source0:	http://xatka.net/~z/PLD/obvious-%{rel}.tar.bz2
 # Source0-md5:	623a976b2fe3f3f2a688d3af0d6e09ef
 URL:		http://awesome.naquadah.org/wiki/Obvious
-Requires:	awesome-plugin-awful
-Requires:	awesome-plugin-beautiful
+Requires:	awesome
 Requires:	awesome-plugin-naughty
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
