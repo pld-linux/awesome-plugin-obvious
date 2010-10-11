@@ -1,5 +1,5 @@
 
-%define		rel 20090924
+%define		rel 20100925
 Summary:	Set of obvious awesome widgets
 Summary(hu.UTF-8):	Alapvető awesome widget-ek gyűjteménye
 Summary(pl.UTF-8):	Zestaw oczywistych widgetów dla awesome
@@ -9,8 +9,8 @@ Release:	0.%{rel}.2
 License:	MIT
 Group:		X11/Window Managers
 # git clone git://git.mercenariesguild.net/obvious.git
-Source0:	http://xatka.net/~z/PLD/obvious-%{rel}.tar.bz2
-# Source0-md5:	ceffb99a73c78f3ad1791e43e910f289
+Source0:	http://carme.pld-linux.org/~uzsolt/sources/obvious-%{rel}.tar.bz2
+# Source0-md5:	a3f4b58138e446cddd28b87ab6dc86b0
 URL:		http://awesome.naquadah.org/wiki/Obvious
 Requires:	awesome
 Requires:	awesome-plugin-naughty
@@ -32,6 +32,9 @@ głośności alsa i tym podobne.
 %prep
 %setup -q -n obvious-%{rel}
 
+for I in $(find -name *.md); do
+  mv $I $(echo $I | sed "s@\.md\$@@")
+done
 for I in */readme; do
   mv $I readme-$(dirname $I)
 done
