@@ -5,7 +5,7 @@ Summary(hu.UTF-8):	Alapvető awesome widget-ek gyűjteménye
 Summary(pl.UTF-8):	Zestaw oczywistych widgetów dla awesome
 Name:		awesome-plugin-obvious
 Version:	0
-Release:	0.%{rel}.2
+Release:	0.%{rel}.3
 License:	MIT
 Group:		X11/Window Managers
 # git clone git://git.mercenariesguild.net/obvious.git
@@ -42,7 +42,7 @@ done
 %install
 rm -rf $RPM_BUILD_ROOT
 
-SUBMODULES=battery,fs_usage,io,net,wlan,basic_mpd,clock,cpu,mem,popup_run_prompt,volume_alsa
+SUBMODULES=battery,fs_usage,io,net,wlan,basic_mpd,clock,cpu,mem,popup_run_prompt,volume_alsa,keymap_switch
 
 install -d $RPM_BUILD_ROOT%{_datadir}/awesome/lib/obvious
 install init.lua $RPM_BUILD_ROOT%{_datadir}/awesome/lib/obvious
